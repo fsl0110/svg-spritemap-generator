@@ -1,5 +1,7 @@
 # An SVG-Spritemap-Generator
 
+Nowadays there are probably better solutions available than this one.
+
 Based on [SVG Spritemap Webpack Plugin](https://github.com/cascornelissen/svg-spritemap-webpack-plugin) and [Webpack](https://github.com/webpack)
 
 **Generate SVG-Spritemaps of your desired SVG-Icons**
@@ -11,6 +13,18 @@ Use your own created SVG-Icons or icons of one of the SVG-Icon-Sets linked below
 3. Use the generated spritemap.svg in the dist folder.
 
 It is recommended to use same sized icons and scale them via css!
+
+## How to use in React?
+
+```javascript
+import sprite from "./spritemap.svg";
+
+export const Icon = ({ name }) => (
+  <svg role="presentation" focusable="false">
+    {<use xlinkHref={`${sprite}#sprite-${name}`} />}
+  </svg>
+);
+```
 
 ## Which icons to use?
 

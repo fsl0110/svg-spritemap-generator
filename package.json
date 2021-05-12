@@ -2,7 +2,7 @@
   "name": "svg-spritemap-generator",
   "version": "0.0.1",
   "description": "Generate SVG-Spritemaps of your desired SVG-Icons",
-  "author": "Frank Simon Lechner",
+  "author": "fsl0110",
   "license": "MIT",
   "repository": {
     "type": "git",
